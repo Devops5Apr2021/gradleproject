@@ -4,7 +4,7 @@ pipeline {
         gradle "gradle"
     }
     stages {
-        stage('checkout&build') {
+        stage('gradleBuild') {
             steps {
                 git 'https://github.com/Devops5Apr2021/gradleproject.git'
                 sh "gradle build"
